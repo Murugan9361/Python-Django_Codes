@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation Properties</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+      
+            transition: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            border-radius: 50%;
+            border: 5px solid rgb(195, 186, 186);
+            border-top:5px solid rgb(33, 76, 230);
+            animation-name: ruthis;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            }
+
+        .box:hover{
+            
+            /* transform: translate(-200px,200px);      */
+            /* transform: rotate(-360deg); */
+            /* transform: skew(-100deg,-100deg); */
+            /* transform: rotate(360deg);
+            transform: scale(0.5); */
+            
+          }
+          @keyframes ruthis {
+           0%{
+            transform: rotate(0deg);
+             border-top:5px solid rgb(33, 76, 230);
+           }
+             50%{
+            transform: rotate(180deg);
+             border-top:5px solid rgb(33, 230, 43);
+           }  100%{
+            transform: rotate(360deg);
+             border-top:5px solid rgb(230, 33, 95);
+           }
+          }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+     </div>
+</body>
+</html>

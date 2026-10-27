@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(23, 189, 186);
+        padding: 20px;
+        color: black;
+      }
+      ul {
+        display: flex;
+      }
+      li {
+        list-style-type: none;
+        margin-right: 20px;
+      }
+      .container{
+       display: flex;
+       align-items: center;
+      }
+      .box-1{
+        width: 100%;
+       
+      }
+      img{
+        margin: auto;
+      }
+      .box-2 h1{
+           text-align: center;
+      }
+
+    
+
+      @media (min-width: 300px) and (max-width: 500px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+      }
+      ul {
+          display: flex;
+          flex-direction: column;
+      }
+      li {
+        margin-top: 20px;
+   
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+
+  
+      }
+      .box-1{
+        margin-bottom: 30px;   
+        display: flex;
+        justify-content: center;  
+       
+      }
+      img{
+        margin: auto;
+        border-radius: 50%;
+       
+      }
+      .box-2 h1{
+           text-align: center;
+      }
+
+    
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Boutique</h1>
+      <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="box-1" >
+        <img src="../HTML//chicken small1.webp" alt=""  height="400px" width="400px"/>
+      </div>
+      <div class="box-2">
+        <h1>About Picture</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+          repellat ab aspernatur atque ipsum dolore asperiores fugiat molestiae
+          deleniti, exercitationem qui dignissimos eveniet beatae saepe,
+          molestias expedita quos nihil inventore.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
